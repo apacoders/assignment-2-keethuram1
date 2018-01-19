@@ -1,5 +1,5 @@
 package assignment2;
-
+import java.util.*;
 /**
  * Instructions for this assignment.  Download this template from GitHub, fill in
  * the author comment below with your name and implement the requirements below.
@@ -8,7 +8,7 @@ package assignment2;
  * If a requirement is not implemented, you will receive 0 points.
  * Requirements are worth 50 points each.
  * 
- * @author myname
+ * @author KeethuRamalingam
  * 
  * Requirements for main method
  * 
@@ -34,7 +34,22 @@ public class Assignment2 {
 
     public static void main(String[] args) {
         
-        
+        Animal dog = new Animal("Woof");
+        Animal cat = new Animal("Meow");
+        Animal californian = new Animal("Narly");
+        Animal mouse = new Animal("Squeek");
+
+        List<Animal> animals = new ArrayList();
+
+        animals.add(cat);
+        animals.add(dog);
+        animals.add(californian);
+        animals.add(mouse);
+
+        for (int i = 0; i < animals.size(); i++) {
+            animals.get(i).speak();
+        }
+
     }
     
 }

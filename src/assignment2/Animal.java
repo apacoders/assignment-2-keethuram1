@@ -11,8 +11,17 @@ package assignment2;
  * onto the screen.
  * 
  * 
- * @author tim
+ * @author KeethuRamalingam
  */
 public class Animal {
     
+    private final String speakParameter;
+    
+    public Animal(String speakParameter) {
+        this.speakParameter = speakParameter;
+    }
+    
+    public void speak(){
+        System.out.println(this.speakParameter);
+    }
 }
